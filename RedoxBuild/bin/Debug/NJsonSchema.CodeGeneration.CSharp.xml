@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NJsonSchema.CodeGeneration.CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.CSharpClassStyle">
+            <summary>The CSharp styles.</summary>
+        </member>
+        <member name="F:NJsonSchema.CodeGeneration.CSharp.CSharpClassStyle.Poco">
+            <summary>Generates POCOs (Plain Old C# Objects).</summary>
+        </member>
+        <member name="F:NJsonSchema.CodeGeneration.CSharp.CSharpClassStyle.Inpc">
+            <summary>Generates classes implementing the <see cref="T:System.ComponentModel.INotifyPropertyChanged"/> interface.</summary>
+        </member>
+        <member name="F:NJsonSchema.CodeGeneration.CSharp.CSharpClassStyle.Prism">
+            <summary>Generates classes implementing the Prism base class.</summary>
+        </member>
+        <member name="F:NJsonSchema.CodeGeneration.CSharp.CSharpClassStyle.Record">
+            <summary>Generates Records - read only POCOs (Plain Old C# Objects).</summary>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator">
+            <summary>The CSharp code generator.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator.#ctor(System.Object)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator"/> class.</summary>
+            <param name="rootObject">The root object to search for all JSON Schemas.</param>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator.#ctor(System.Object,NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator"/> class.</summary>
+            <param name="rootObject">The root object to search for all JSON Schemas.</param>
+            <param name="settings">The generator settings.</param>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator.#ctor(System.Object,NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings,NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator"/> class.</summary>
+            <param name="rootObject">The root object to search for all JSON Schemas.</param>
+            <param name="settings">The generator settings.</param>
+            <param name="resolver">The resolver.</param>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator.Settings">
+            <summary>Gets the generator settings.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator.GenerateTypes">
+            <inheritdoc />
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator.GenerateFile(NJsonSchema.CodeGeneration.CodeArtifactCollection)">
+            <inheritdoc />
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpGenerator.GenerateType(NJsonSchema.JsonSchema4,System.String)">
+            <summary>Generates the type.</summary>
+            <param name="schema">The schema.</param>
+            <param name="typeNameHint">The type name hint.</param>
+            <returns>The code.</returns>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings">
+            <summary>The generator settings.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings"/> class.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.Namespace">
+            <summary>Gets or sets the .NET namespace of the generated types (default: MyNamespace).</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.RequiredPropertiesMustBeDefined">
+            <summary>Gets or sets a value indicating whether a required property must be defined in JSON 
+            (sets Required.Always when the property is required) (default: true).</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.GenerateDataAnnotations">
+            <summary>Gets or sets a value indicating whether to generated data annotation attributes (default: true).</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.DateType">
+            <summary>Gets or sets the date .NET type (default: 'DateTime').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.DateTimeType">
+            <summary>Gets or sets the date time .NET type (default: 'DateTime').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.TimeType">
+            <summary>Gets or sets the time .NET type (default: 'TimeSpan').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.TimeSpanType">
+            <summary>Gets or sets the time span .NET type (default: 'TimeSpan').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.ArrayType">
+            <summary>Gets or sets the generic array .NET type (default: 'ObservableCollection').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.DictionaryType">
+            <summary>Gets or sets the generic dictionary .NET type (default: 'Dictionary').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.ArrayBaseType">
+            <summary>Gets or sets the generic array .NET type which is used as base class (default: 'ObservableCollection').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.DictionaryBaseType">
+            <summary>Gets or sets the generic dictionary .NET type which is used as base class (default: 'Dictionary').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.ClassStyle">
+            <summary>Gets or sets the CSharp class style (default: 'Poco').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.TypeAccessModifier">
+            <summary>Gets or sets the access modifier of generated classes and interfaces (default: 'public').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.PropertySetterAccessModifier">
+            <summary>Gets the access modifier of property setters (default: '').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.JsonConverters">
+            <summary>Gets or sets the custom Json.NET converters (class names) which are registered for serialization and deserialization.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.GenerateImmutableArrayProperties">
+            <summary>Gets or sets a value indicating whether to remove the setter for non-nullable array properties (default: false).</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.GenerateImmutableDictionaryProperties">
+            <summary>Gets or sets a value indicating whether to remove the setter for non-nullable dictionary properties (default: false).</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.HandleReferences">
+            <summary>Gets or sets a value indicating whether to use preserve references handling (All) in the JSON serializer (default: false).</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.JsonSerializerSettingsTransformationMethod">
+            <summary>Gets or sets the name of a static method which is called to transform the JsonSerializerSettings used in the generated ToJson()/FromJson() methods (default: null).</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings.GenerateJsonMethods">
+            <summary>Gets or sets a value indicating whether to render ToJson() and FromJson() methods (default: true).</summary>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.CSharpJsonSerializerGenerator">
+            <summary>Generates JSON converter code.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpJsonSerializerGenerator.GenerateJsonSerializerParameterCode(NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>Generates the JSON converter code.</summary>
+            <param name="settings">The settings.</param>
+            <param name="additionalJsonConverters">The additional JSON converters.</param>
+            <returns>The code.</returns>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.CSharpPropertyNameGenerator">
+            <summary>Generates the property name for a given CSharp <see cref="T:NJsonSchema.JsonProperty"/>.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpPropertyNameGenerator.Generate(NJsonSchema.JsonProperty)">
+            <summary>Generates the property name.</summary>
+            <param name="property">The property.</param>
+            <returns>The new name.</returns>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver">
+            <summary>Manages the generated types and converts JSON types to CSharp types. </summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver.#ctor(NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver"/> class.</summary>
+            <param name="settings">The generator settings.</param>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver.#ctor(NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings,NJsonSchema.JsonSchema4)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver"/> class.</summary>
+            <param name="settings">The generator settings.</param>
+            <param name="exceptionSchema">The exception type schema.</param>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver.ExceptionSchema">
+            <summary>Gets the exception schema.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver.Settings">
+            <summary>Gets the generator settings.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver.Resolve(NJsonSchema.JsonSchema4,System.Boolean,System.String)">
+            <summary>Resolves and possibly generates the specified schema.</summary>
+            <param name="schema">The schema.</param>
+            <param name="isNullable">Specifies whether the given type usage is nullable.</param>
+            <param name="typeNameHint">The type name hint to use when generating the type and the type name is missing.</param>
+            <returns>The type name.</returns>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.CSharpValueGenerator">
+            <summary>Converts the default value to a TypeScript identifier.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpValueGenerator.#ctor(NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.CSharpValueGenerator" /> class.</summary>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpValueGenerator.GetDefaultValue(NJsonSchema.JsonSchema4,System.Boolean,System.String,System.String,System.Boolean,NJsonSchema.CodeGeneration.TypeResolverBase)">
+            <summary>Gets the default value code.</summary>
+            <param name="schema">The schema.</param>
+            <param name="allowsNull">Specifies whether the default value assignment also allows null.</param>
+            <param name="targetType">The type of the target.</param>
+            <param name="typeNameHint">The type name hint to use when generating the type and the type name is missing.</param>
+            <param name="useSchemaDefault">if set to <c>true</c> uses the default value from the schema if available.</param>
+            <param name="typeResolver">The type resolver.</param>
+            <returns>The code.</returns>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpValueGenerator.GetNumericValue(NJsonSchema.JsonObjectType,System.Object,System.String)">
+            <summary>Converts the default value to a C# number literal. </summary>
+            <param name="type">The JSON type.</param>
+            <param name="value">The value to convert.</param>
+            <param name="format">Optional schema format</param>
+            <returns>The C# number literal.</returns>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.CSharpValueGenerator.GetEnumDefaultValue(NJsonSchema.JsonSchema4,NJsonSchema.JsonSchema4,System.String,NJsonSchema.CodeGeneration.TypeResolverBase)">
+            <summary>Gets the enum default value.</summary>
+            <param name="schema">The schema.</param>
+            <param name="actualSchema">The actual schema.</param>
+            <param name="typeNameHint">The type name hint.</param>
+            <param name="typeResolver">The type resolver.</param>
+            <returns>The enum default value.</returns>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel">
+            <summary>The CSharp class template model.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.#ctor(System.String,NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings,NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver,NJsonSchema.JsonSchema4,System.Object)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel"/> class.</summary>
+            <param name="typeName">Name of the type.</param>
+            <param name="settings">The settings.</param>
+            <param name="resolver">The resolver.</param>
+            <param name="schema">The schema.</param>
+            <param name="rootObject">The root object.</param>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.ClassName">
+            <summary>Gets or sets the class name.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.Namespace">
+            <summary>Gets the namespace.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.HasAdditionalPropertiesType">
+            <summary>Gets a value indicating whether an additional properties type is available.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.AdditionalPropertiesType">
+            <summary>Gets the type of the additional properties.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.Properties">
+            <summary>Gets the property models.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.AllProperties">
+            <summary>Gets the property models with inherited properties.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.HasDescription">
+            <summary>Gets a value indicating whether the class has description.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.Description">
+            <summary>Gets the description.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.RenderInpc">
+            <summary>Gets a value indicating whether the class style is INPC.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.RenderPrism">
+            <summary>Gets a value indicating whether the class style is Prism.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.RenderRecord">
+            <summary>Gets a value indicating whether the class style is Record.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.GenerateJsonMethods">
+            <summary>Gets a value indicating whether to render ToJson() and FromJson() methods.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.HasDiscriminator">
+            <summary>Gets a value indicating whether the class has discriminator property.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.Discriminator">
+            <summary>Gets the discriminator property name.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.HasInheritance">
+            <summary>Gets a value indicating whether the class has a parent class.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.BaseClassName">
+            <summary>Gets the base class name.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.BaseClass">
+            <summary>Gets the base class model.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.InheritsExceptionSchema">
+            <summary>Gets a value indicating whether the class inherits from exception.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.UseDateFormatConverter">
+            <summary>Gets a value indicating whether to use the DateFormatConverter.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.TypeAccessModifier">
+            <summary>Gets or sets the access modifier of generated classes and interfaces.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.PropertySetterAccessModifier">
+            <summary>Gets the access modifier of property setters (default: '').</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel.JsonSerializerParameterCode">
+            <summary>Gets the JSON serializer parameter code.</summary>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.Models.DateFormatConverterTemplateModel">
+            <summary>The DateFormatConverterTemplateModel.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.Models.DateFormatConverterTemplateModel.#ctor(NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings)">
+            <summary>The DateFormatConverterTemplateModel.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.DateFormatConverterTemplateModel.GenerateDateFormatConverterClass">
+            <summary>Gets or sets a value indicating whether to generate the DateFormatConverter class.</summary>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel">
+            <summary>The CSharp enum template model.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel.#ctor(System.String,NJsonSchema.JsonSchema4,NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel" /> class.</summary>
+            <param name="typeName">Name of the type.</param>
+            <param name="schema">The schema.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel.Name">
+            <summary>Gets the name.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel.HasDescription">
+            <summary>Gets a value indicating whether the enum has description.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel.Description">
+            <summary>Gets the description.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel.IsStringEnum">
+            <summary>Gets a value indicating whether the enum is of type string.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel.TypeAccessModifier">
+            <summary>Gets or sets the access modifier of generated classes and interfaces.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.EnumTemplateModel.Enums">
+            <summary>Gets the enum values.</summary>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.Models.FileTemplateModel">
+            <summary>The CSharp file template model.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.FileTemplateModel.Namespace">
+            <summary>Gets or sets the namespace.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.FileTemplateModel.TypesCode">
+            <summary>Gets or sets the types code.</summary>
+        </member>
+        <member name="T:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel">
+            <summary>The CSharp property template model.</summary>
+        </member>
+        <member name="M:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.#ctor(NJsonSchema.CodeGeneration.CSharp.Models.ClassTemplateModel,NJsonSchema.JsonProperty,NJsonSchema.CodeGeneration.CSharp.CSharpTypeResolver,NJsonSchema.CodeGeneration.CSharp.CSharpGeneratorSettings)">
+            <summary>Initializes a new instance of the <see cref="T:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel"/> class.</summary>
+            <param name="classTemplateModel">The class template model.</param>
+            <param name="property">The property.</param>
+            <param name="typeResolver">The type resolver.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.Name">
+            <summary>Gets the name of the property.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.Type">
+            <summary>Gets the type of the property.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.HasDescription">
+            <summary>Gets a value indicating whether the property has a description.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.Description">
+            <summary>Gets the description.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.FieldName">
+            <summary>Gets the name of the field.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.AllowEmptyStrings">
+            <summary>Gets or sets a value indicating whether empty strings are allowed.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.HasSetter">
+            <summary>Gets a value indicating whether this is an array property which cannot be null.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.JsonPropertyRequiredCode">
+            <summary>Gets the json property required.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.RenderRequiredAttribute">
+            <summary>Gets a value indicating whether to render a required attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.RenderRangeAttribute">
+            <summary>Gets a value indicating whether to render a range attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.RangeMinimumValue">
+            <summary>Gets the minimum value of the range attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.RangeMaximumValue">
+            <summary>Gets the maximum value of the range attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.RenderStringLengthAttribute">
+            <summary>Gets a value indicating whether to render a string length attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.StringLengthMinimumValue">
+            <summary>Gets the minimum value of the string length attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.StringLengthMaximumValue">
+            <summary>Gets the maximum value of the string length attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.RenderRegularExpressionAttribute">
+            <summary>Gets a value indicating whether to render a regular expression attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.RegularExpressionValue">
+            <summary>Gets the regular expression value for the regular expression attribute.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.IsStringEnum">
+            <summary>Gets a value indicating whether the property type is string enum.</summary>
+        </member>
+        <member name="P:NJsonSchema.CodeGeneration.CSharp.Models.PropertyModel.IsDate">
+            <summary>Gets a value indicating whether the property should be formatted like a date.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedoxDataModelBuilder", "RedoxDataModelBuilder\RedoxDataModelBuilder.csproj", "{84EB462D-FD21-4C22-89EF-3682B4CE9E80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedoxBuild", "RedoxBuild\RedoxBuild.csproj", "{372FA4CB-45FB-4909-82E9-91CD08BA1B9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84EB462D-FD21-4C22-89EF-3682B4CE9E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EB462D-FD21-4C22-89EF-3682B4CE9E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EB462D-FD21-4C22-89EF-3682B4CE9E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EB462D-FD21-4C22-89EF-3682B4CE9E80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372FA4CB-45FB-4909-82E9-91CD08BA1B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372FA4CB-45FB-4909-82E9-91CD08BA1B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372FA4CB-45FB-4909-82E9-91CD08BA1B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372FA4CB-45FB-4909-82E9-91CD08BA1B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEA534B6-90CD-4E7A-B18C-B4317D42D0AC}
+	EndGlobalSection
+EndGlobal

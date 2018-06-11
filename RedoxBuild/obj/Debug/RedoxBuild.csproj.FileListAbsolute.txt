@@ -1,0 +1,44 @@
+D:\KioskUI\RedoxBuild\bin\Debug\RedoxBuild.exe.config
+D:\KioskUI\RedoxBuild\bin\Debug\RedoxBuild.exe
+D:\KioskUI\RedoxBuild\bin\Debug\RedoxBuild.pdb
+D:\KioskUI\RedoxBuild\obj\Debug\RedoxBuild.csproj.CoreCompileInputs.cache
+D:\KioskUI\RedoxBuild\obj\Debug\RedoxBuild.exe
+D:\KioskUI\RedoxBuild\obj\Debug\RedoxBuild.pdb
+D:\KioskUI\RedoxBuild\obj\Debug\RedoxBuild.csprojResolveAssemblyReference.cache
+D:\KioskUI\RedoxBuild\bin\Debug\RedoxDataModelBuilder.dll
+D:\KioskUI\RedoxBuild\bin\Debug\Newtonsoft.Json.dll
+D:\KioskUI\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.CSharp.dll
+D:\KioskUI\RedoxBuild\bin\Debug\NJsonSchema.dll
+D:\KioskUI\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.dll
+D:\KioskUI\RedoxBuild\bin\Debug\DotLiquid.dll
+D:\KioskUI\RedoxBuild\bin\Debug\RedoxDataModelBuilder.pdb
+D:\KioskUI\RedoxBuild\bin\Debug\RedoxDataModelBuilder.dll.config
+D:\KioskUI\RedoxBuild\bin\Debug\Newtonsoft.Json.xml
+D:\KioskUI\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.CSharp.xml
+D:\KioskUI\RedoxBuild\bin\Debug\NJsonSchema.xml
+D:\KioskUI\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.xml
+D:\KioskUI\RedoxBuild\bin\Debug\DotLiquid.xml
+D:\KioskUI\RedoxBuild\bin\Debug\it\DotLiquid.resources.dll
+D:\KioskUI\RedoxBuild\obj\Debug\RedoxBuild.exe.config
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\RedoxBuild.exe.config
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\RedoxBuild.exe
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\RedoxBuild.pdb
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\RedoxDataModelBuilder.dll
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.CSharp.dll
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\NJsonSchema.dll
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.dll
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\DotLiquid.dll
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\RedoxDataModelBuilder.pdb
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\RedoxDataModelBuilder.dll.config
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.CSharp.xml
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\NJsonSchema.xml
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\NJsonSchema.CodeGeneration.xml
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\DotLiquid.xml
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\bin\Debug\it\DotLiquid.resources.dll
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\obj\Debug\RedoxBuild.csprojResolveAssemblyReference.cache
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\obj\Debug\RedoxBuild.exe.config
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\obj\Debug\RedoxBuild.csproj.CoreCompileInputs.cache
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\obj\Debug\RedoxBuild.exe
+C:\Users\ttorkelson\Documents\Projects\Redox Data Model Builder\RedoxBuild\obj\Debug\RedoxBuild.pdb
