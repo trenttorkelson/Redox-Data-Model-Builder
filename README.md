@@ -1,12 +1,15 @@
 # Redox-Data-Model-Builder
 A JSON schema to .Net Class library converter for Redox Data Model
 
+This library can be configured to download the latest Redox schema ZIP file from redoxengine.com, unzip it, and use the .json schema files to create a complete or partial .Net Class Library for use in Redox API integrations.
+
 The solution contains 2 projects, RedoxDataModelBuilder (Class Library DLL) and RedoxBuild (Wrapper Console Application).
 You can:
   1. Build your own wrapper UI around the RedoxDataModelBuilder.dll library.
   2. Use the included wrapper to automate your build process.
   
-After the file is generated, simply include it in your project in references and use the namespace you built the dll/cs file with! Simple as that.
+After the file is generated, simply include it in your project in references and use the namespace you built the dll/cs file with! 
+Simple as that.
 
 
 The RedoxBuild Application supports command-line usage:
